@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cloudjibe.android_started_bound_services.DownloadActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal" >-->
+
+            <!--<android.support.design.widget.AppBarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+                <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:background="?attr/colorPrimary"-->
+                    <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+            <!--</android.support.design.widget.AppBarLayout>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="358dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:text="Please provide list of five PDFs to download.\n *hardcode of files is file path. Feel free to change to other URL. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:layout_marginTop="25dp"
+                android:textAlignment="textEnd"
+                android:text="@string/download_lbl_pdf1" />
+
+            <EditText
+                android:id="@+id/etpdf1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.60"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:text="http://www.huzheng.org/geniusreligion/AnimalFarm.pdf"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:textAlignment="textEnd"
+                android:text="@string/download_lbl_pdf2" />
+
+            <EditText
+                android:id="@+id/etpdf2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.60"
+                android:layout_marginRight="25dp"
+                android:text="http://www.sierrasafarizoo.org/animals.pdf"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:textAlignment="textEnd"
+                android:text="@string/download_lbl_pdf3" />
+
+            <EditText
+                android:id="@+id/etpdf3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.60"
+                android:layout_marginRight="25dp"
+                android:text="http://www.pdf995.com/samples/pdf.pdf"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:textAlignment="textEnd"
+                android:text="@string/download_lbl_pdf4" />
+
+            <EditText
+                android:id="@+id/etpdf4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.60"
+                android:layout_marginRight="25dp"
+                android:text="http://courses.botany.wisc.edu/botany_401/pdf/401_05Flowers.pdf"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:textAlignment="textEnd"
+                android:text="@string/download_lbl_pdf5" />
+
+            <EditText
+                android:id="@+id/etpdf5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.60"
+                android:layout_marginRight="25dp"
+                android:text="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+                android:ems="10"
+                android:background="@drawable/edittextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  android:layout_marginTop="10dp">
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.25" />-->
+
+            <Button
+                android:id="@+id/btnStartDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.375"
+                android:onClick="onbtnStartDownloadClick"
+                android:text="@string/download_btn_download" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.375"
+                android:onClick="onbtnCancelClick"
+                android:text="@string/download_btn_cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
