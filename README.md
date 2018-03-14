@@ -1,7 +1,9 @@
 # Android app to demonstrate service behavior of android
 ####                                                                                                     By Manoj Kumar
 ## Introduction 
-Android app to demonstrate service behavior of android. This app download files using service.
+Android app to demonstrate service behavior of android. This app download files using service. 
+#### Started vs Bounded:
+Started services cannot return results/values or interact with its starting component. Bound services on the other hand can send data to the launching component (client). So for example a bound service might be playing an audio file and sending data regarding audio start/pause/stop and the time elapsed to the launching Activity component so that the UI can be updated accordingly.
 
 
 ## How to Run
