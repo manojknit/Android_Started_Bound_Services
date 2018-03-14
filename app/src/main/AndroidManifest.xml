@@ -24,6 +24,11 @@
                 <action android:name="net.learn2develop.MyService" />
             </intent-filter>
         </service>
+        <service android:name=".MyBoundService">
+            <intent-filter>
+                <action android:name="net.learn2develop.MyBoundService" />
+            </intent-filter>
+        </service>
         <activity android:name=".DownloadActivity" android:label="@string/download_activity_title" ></activity>
     </application>
 </manifest>

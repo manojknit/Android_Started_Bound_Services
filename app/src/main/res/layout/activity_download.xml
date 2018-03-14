@@ -42,7 +42,7 @@
                 android:layout_width="358dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="24dp"
-                android:text="Please provide list of five PDFs to download.\n *hardcode of files is file path. Feel free to change to other URL. "
+                android:text="Please provide list of five PDFs to download.\n *hardcode of files is file path. Feel free to change to other URL. Please make sure urls are working. "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -91,7 +91,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="0.60"
                 android:layout_marginRight="25dp"
-                android:text="http://www.sierrasafarizoo.org/animals.pdf"
+                android:text="http://www.orimi.com/pdf-test.pdf"
                 android:ems="10"
                 android:background="@drawable/edittextstyle"/>
         </LinearLayout>
@@ -137,7 +137,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="0.60"
                 android:layout_marginRight="25dp"
-                android:text="http://courses.botany.wisc.edu/botany_401/pdf/401_05Flowers.pdf"
+                android:text="http://zsory-furdo.hu/evcms_medias/upload/files/testfile.pdf"
                 android:ems="10"
                 android:background="@drawable/edittextstyle"/>
         </LinearLayout>
@@ -160,15 +160,15 @@
                 android:layout_height="30dp"
                 android:layout_weight="0.60"
                 android:layout_marginRight="25dp"
-                android:text="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
+                android:text="http://cream.sourceforge.net/ColorCard.pdf"
                 android:ems="10"
                 android:background="@drawable/edittextstyle"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"  android:layout_marginTop="10dp">
+            android:layout_height="100dp"
+            android:orientation="horizontal" android:layout_gravity="center_vertical|center_horizontal" android:paddingTop="50dp">
 
             <!--<View-->
             <!--android:layout_width="0dp"-->
@@ -178,21 +178,30 @@
             <Button
                 android:id="@+id/btnStartDownload"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true" android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="0.375"
                 android:onClick="onbtnStartDownloadClick"
                 android:text="@string/download_btn_download" />
+            <Button
+                android:id="@+id/btnBoundDownload"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true" android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.375"
+                android:onClick="onbtnBoundDownloadClick"
+                android:text="@string/download_btn_bound_download" />
 
             <Button
                 android:id="@+id/btnCancel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_height="73dp"
+                android:layout_centerInParent="true" android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="0.375"
                 android:onClick="onbtnCancelClick"
                 android:text="@string/download_btn_cancel" />
         </LinearLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

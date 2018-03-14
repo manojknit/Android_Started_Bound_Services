@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 
+//Started service
 public class MyService extends Service {
 	int counter = 0;
 	public URL[] urls;
@@ -85,8 +86,8 @@ public class MyService extends Service {
         for (int i=0; i<objUrls.length; i++) {
         	urls[i] = (URL) objUrls[i];
         }        
-    	new DoBackgroundTask().execute(urls);	
-        
+    	new DoBackgroundTask().execute(urls);
+		//START_STICKY – Service will be restarted if it gets terminated whether any requests are pending or not.
 		return START_STICKY;
 	}	
 
@@ -121,9 +122,7 @@ public class MyService extends Service {
 		OutputStream output = null;
 		HttpURLConnection connection = null;
 		try {
-			//---simulate taking some time to download a file---
-			//Thread.sleep(5000);
-
+			//Download file
 			connection = (HttpURLConnection)url.openConnection();
 			connection.connect();
 			// expect HTTP 200 OK, so we don't mistakenly save error report
@@ -186,7 +185,7 @@ public class MyService extends Service {
 				connection.disconnect();
 		}
 
-		return 100;
+		return 1;
 	}	
 
 	private class DoBackgroundTask extends AsyncTask<URL, Integer, Long> {
@@ -212,7 +211,7 @@ public class MyService extends Service {
 
         protected void onPostExecute(Long result) {
         	Toast.makeText(getBaseContext(),
-        			"Downloaded " + result + " bytes", 
+        			"Downloaded " + result + " files with Started service.",
         			Toast.LENGTH_LONG).show();
         	stopSelf();
         }        
